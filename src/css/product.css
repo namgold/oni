@@ -1,0 +1,195 @@
+#jump-to{
+    background: #f8f9fa;
+}
+/* collection  */
+.collection-logo{
+    height: 400px;
+}
+.collection-text{
+    font-size: 40px;
+    padding-top:   180px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: lighter;
+
+}
+.collection{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+
+}
+.collection-logo{
+    background-image: url('../images/_bg_6.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+/* end collection */
+/* fix menu */
+.topnav{
+  margin: 0;
+}
+/* end fix menu */
+/* single product */
+body{
+  background: #f8f9fa;
+}
+.all-info{
+  background: #f8f9fa;
+}
+.single-product{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 100px;
+  padding-bottom: 200px;
+}
+
+.single-product-image{
+  width: 50%;
+  float: left;
+}
+.single-product-info{
+  width: 50%;
+  float: left;
+}
+.single-product-infomation{
+  width: 80%;
+  margin-left: 10%;
+}
+.product-name,.product-price,.product-description{
+  margin: 18px 0;
+}
+.submit-button,.product-size,.product-amount{
+  margin: 14px 0;
+}
+.product-name h2{
+  text-transform: uppercase;  
+  font-size: 28px;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: lighter;
+}
+.product-price p{
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.8;
+}
+.product-description{
+  text-align: justify;
+}
+.product-description p{
+  font-family: "Lato", Arial, sans-serif;
+  color: gray;
+  font-size: 15px;
+  line-height: 1.8;
+}
+.custom-select{
+  width: 40%;
+  height: 50px;
+  box-sizing: border-box;
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.product-amount input{
+  display: inline-block;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  width: 30%;
+}
+.product-amount a{
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+} 
+.submit-button a{
+  display: inline-block;
+  height: 60px;
+  min-width: 200px;
+  border-radius:30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: #f1b8c4;
+  border: 1px solid #f1b8c4;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  color: #fff;
+}
+.submit-button a:hover{
+  color: #f1b8c4;
+  background: #fff;
+  border: 1px solid #f1b8c4;
+}
+/* end single product */
+/* subcribe */
+.subcribe{
+  width: 100%;
+  background: #fff;
+  padding: 100px 0;
+}
+.subcribe-form{
+  text-align: center;
+  overflow: hidden;
+  margin-top:50px;
+}
+.subcribe-form input{
+  display: inline-block;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  width: 20%;
+}
+.subcribe-form a{
+  text-align: left;
+  display: inline-block;
+  width: 8%;
+  height: 50px;
+  background: #000;
+  color: #fff;
+  margin-left: -5px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+}
+.subcribe-form input::placeholder{
+  color:black;
+  text-align: left;
+  padding-left: 5%;
+}
+
+.big-text{
+  font-family: 'Lato', Arial, sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-size: 150px;
+  color: rgba(0, 0, 0, 0.04);
+  font-weight: 900;
+  letter-spacing: 1px; 
+}
+.small-text{
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+  font-size: 30px;
+  padding-top:90px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+/* end subcribe */

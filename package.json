@@ -1,0 +1,13 @@
+{
+  "name": "oni",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "http-server src"
+  },
+  "author": "Nam Nguyen",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

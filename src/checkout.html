@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oni_Studio</title>
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/config.css">
+    <link rel="stylesheet" type="text/css" href="css/menu_style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer_style.css">
+    <link rel="stylesheet" type="text/css" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <script>
+        function Order() {
+            var str1 = firstname.value;
+            var str2 = lastname.value;
+            if (str1.length == 0) {
+                alert("Bạn nhập thiếu First name");
+            }
+            else {
+                if (str2.length == 0) {
+                    alert("Bạn nhập thiếu Last name");
+
+                }
+                else {
+                    alert("Order submit")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Oni Say Hi</a>
+        <div class="subNav" id="subNav">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">Shop 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="dress.html">Dress</a>
+                    <a href="top.html">Top</a>
+                    <a href="skirt.html">Skirt</a>
+                </div>
+            </div> 
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class="fa fa-shopping-cart"></i>[0]</a>
+            <a href="#myTopnav" style="font-size:15px;" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+    <!-- end nav bar -->
+    <section>
+        <div class="collection-logo">
+            <h1 class="collection-text text-center">Checkout</h1>
+            <p class="collection text-center"><span><a href="index.html">Home</a></span> <span><a href="checkout.html" style="color:#f1b8c4">Checkout</a></span></p>
+        </div>
+    </section>
+    <section>
+        <div id="jump-to">
+        </div>
+    </section>
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <form action="#" class="billing-form bg-light p-3 p-md-5">
+                        <h3 class="mb-4 billing-heading">Billing Details</h3>
+                        <div class="row align-items-end">
+                            <div class="col-md-6 flex">
+                                <div class="form-group ">
+                                    <label for="firstname">Firt Name</label>
+                                    <input type="text" class="form-control" placeholder="" id="firstname" name="firstname" onblur="validateFN()">
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group ">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="" id="lastname" name="lastname" onblur="validateLN()">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="country">State / Country</label>
+                                    <div class="select-wrap">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">France</option>
+                                            <option value="">Italy</option>
+                                            <option value="">Philippines</option>
+                                            <option value="">South Korea</option>
+                                            <option value="">Hongkong</option>
+                                            <option value="">VietNam</option>
+                                            <option value="">Japan</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <label for="streetaddress">Street Address</label>
+                                    <input type="text" class="form-control" placeholder="House number and street name">
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <label for="towncity">Town / City</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <label for="postcodezip">Postcode / ZIP *</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="col-md-6 flex">
+                                <div class="form-group">
+                                    <label for="emailaddress">Email Address</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-md-12">
+                                <div class="form-group mt-4">
+                                    <div class="radio">
+                                        <label class="mr-3"><input type="radio" name="optradio"> Create an Account? </label>
+                                        &nbsp; &nbsp;
+                                        <label><input type="radio" name="optradio"> Ship to different address</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="row mt-5 pt-3 d-flex">
+                        <div class="col-md-6 d-flex">
+                            <div class="cart-detail cart-total bg-light">
+                                <h3 class="billing-heading mb-4">Cart Total</h3>
+                                <p class="d-flex">
+                                    <span>Subtotal</span>
+                                    <span>950.000d</span>
+                                </p>
+                                <p class="d-flex">
+                                    <span>Delivery</span>
+                                    <span>0d</span>
+                                </p>
+                                <p class="d-flex">
+                                    <span>Discount</span>
+                                    <span>0d</span>
+                                </p>
+                                <hr>
+                                <p class="d-flex total-price">
+                                    <span>Total</span>
+                                    <span>950.000d</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 d-flex">
+                            <div class="cart-detail bg-light p-3 p-md-4">
+                                <h3 class="billing-heading mb-4">Payment Method</h3>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Tranfer</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" class="mr-2"> Check Payment</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><button onclick="Order()" class="btn btn-primary py-3 px-4 placeholder-button">Place an order</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="contact">
+                <div class="social-network">
+                    <h2 class="heading-2">Oni Studio</h2>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li><a href="#"><span class="big-icon"><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="#"><span class="big-icon"><i class="fa fa-instagram"></i></span></a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <h2 class="heading-2">Menu</h2>
+                    <ul>
+                        <li><a href="shop.html"><span class="text">Shop</span></a></li>
+                        <li><a href="about.html"><span class="text">About</span></a></li>
+                        <li><a href="contact.html"><span class="text">Contact</span></a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h2 class="heading-2">Information</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon"><i class="fa fa-map-marker"></i></span><span class="text">01 Hoang Dieu 2 Street, Linh Trung Ward, Thu Duc District, Ho Chi Minh City</span></li>
+                            <li><span class="icon"><i class="fa fa-phone"></i></span><span class="text">(+)84 373 409 860</span></li>
+                            <li><span class="icon"><i class="fa fa-envelope"></i></span><span class="text">oni.studio@gmail.com</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="text-center thanks">
+                <p>
+                    <b>Thank you for choice us</b>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script>
+            $(document).ready(function () {
+                $(window).scroll(function(){
+                    var ScrollTop = parseInt($(window).scrollTop());
+                    if (ScrollTop > 1000) {
+                        document.getElementsByClassName("topnav")[0].style.backgroundColor = "#fff";
+                        document.getElementsByClassName("subNav")[0].getElementsByTagName('a')[0].style.color = "#f1b8c4";
+                        document.getElementsByClassName("dropdown-content")[0].style.backgroundColor = "#fff";
+                        document.getElementsByClassName("topnav")[0].style["box-shadow"] = "0 0 5px #eee";
+                        document.getElementsByClassName("topnav")[0].style.border = "0 0 5px #eee";
+    
+                    }
+                });
+            });
+            $(document).ready(function () {
+                $(window).scroll(function(){
+                    var ScrollTop = parseInt($(window).scrollTop());
+                    if (ScrollTop < 1000) {
+                        document.getElementsByClassName("topnav")[0].style.backgroundColor = "transparent";
+                        document.getElementsByClassName("subNav")[0].getElementsByTagName('a')[0].style.color = "#000";
+                        document.getElementsByClassName("dropdown-content")[0].style.backgroundColor = "transparent";
+                        document.getElementsByClassName("topnav")[0].style["box-shadow"] = "0 0 0px";
+                        document.getElementsByClassName("topnav")[0].style.border = "0px";
+                    }
+                });
+            });
+        </script>
+    <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+                var y = document.getElementById("subNav");
+                if (y.className === "subNav") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "subNav";
+                }
+            }
+        </script>
+</body>
+</html>
